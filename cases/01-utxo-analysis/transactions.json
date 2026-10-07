@@ -1,0 +1,23 @@
+{
+  "txid": "TX-001",
+  "inputs": [
+    {
+      "address": "A",
+      "amount": 0.42
+    },
+    {
+      "address": "B",
+      "amount": 0.38
+    }
+  ],
+  "outputs": [
+    {
+      "address": "C",
+      "amount": 0.715
+    },
+    {
+      "address": "D",
+      "amount": 0.0845
+    }
+  ]
+}
