@@ -1,23 +1,48 @@
-{
-  "txid": "TX-001",
-  "inputs": [
-    {
-      "address": "A",
-      "amount": 0.42
-    },
-    {
-      "address": "B",
-      "amount": 0.38
-    }
-  ],
-  "outputs": [
-    {
-      "address": "C",
-      "amount": 0.715
-    },
-    {
-      "address": "D",
-      "amount": 0.0845
-    }
-  ]
-}
+[
+  {
+    "txid": "TX-001",
+    "inputs": [
+      {
+        "address": "A",
+        "amount": 0.42
+      },
+      {
+        "address": "B",
+        "amount": 0.38
+      }
+    ],
+    "outputs": [
+      {
+        "vout": 0,
+        "address": "C",
+        "amount": 0.715
+      },
+      {
+        "vout": 1,
+        "address": "D",
+        "amount": 0.0845
+      }
+    ]
+  },
+  {
+    "txid": "TX-002",
+    "inputs": [
+      {
+        "prev_txid": "TX-001",
+        "prev_vout": 1
+      }
+    ],
+    "outputs": [
+      {
+        "vout": 0,
+        "address": "E",
+        "amount": 0.0800
+      },
+      {
+        "vout": 1,
+        "address": "F",
+        "amount": 0.0043
+      }
+    ]
+  }
+]
