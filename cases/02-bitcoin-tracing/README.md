@@ -1,72 +1,23 @@
-## Current Progress
-
-### Completed
-
-- Bitcoin transaction fundamentals
-- UTXO model, inputs and outputs
-- TXID and `vout` tracing
-- Transaction fee analysis
-- Bitcoin address and script types
-- Address reuse analysis
-- Common Input Ownership Heuristic (CIOH)
-- Change-output heuristics
-- Fan-in and fan-out patterns
-- UTXO consolidation
-- CoinJoin fundamentals and heuristic limitations
-- Peel-chain analysis
-- Real on-chain Bitcoin transaction tracing
-- Address profiling
-- Separating deterministic observations from heuristic conclusions
-
-### Cases
-
-#### Case 01 — UTXO Analysis
-Synthetic Bitcoin transactions used to understand UTXOs, transaction fees, input/output relationships and basic forensic heuristics.
-
-**Status:** Completed
-
-#### Case 02 — Bitcoin Transaction Tracing
-Real public Bitcoin transactions analyzed across multiple hops.
-
-The investigation included:
-
-- Following specific UTXOs between transactions
-- Identifying recurring peel-chain-like behavior
-- Comparing multiple transaction branches
-- Analyzing address reuse
-- Identifying repeated transaction characteristics
-- Evaluating possible continuation/change outputs
-- Documenting attribution limitations
-- Separating confirmed on-chain evidence from analytical hypotheses
-
-**Status:** Completed
-
-### Currently Learning
-
-**Ethereum Forensics**
-
-Next topics:
-
-- Ethereum account model
-- EOAs and smart contracts
-- ETH transactions
-- Gas and transaction fees
-- Internal calls
-- Events and logs
-- ERC-20 token transfers
-- USDT and USDC tracing
-- Smart-contract interactions
-- DEX and DeFi analysis
-- Cross-chain tracing
-
----
-
-## Investigation Principle
-
-Throughout this project, findings are separated into four categories:
-
-**Observation → Hypothesis → Supporting Evidence → Limitation**
-
-A transaction relationship that can be verified directly on-chain is treated differently from a heuristic inference or real-world attribution.
-
-The objective is not only to trace cryptocurrency, but to understand **what the available evidence can and cannot establish**.
+c0cc08a3...
+0.16729426 BTC
+│
+├── 0.00186615
+└── 0.16541965
+        ↓
+d2656fc2...
+├── 0.00229996
+└── 0.16311123
+        ↓
+26fc48be...
+├── 0.00272576
+└── 0.16037701
+        ↓
+e264653d...
+├── 0.10486020 → heavily reused address
+└── 0.05550835
+        ↓
+074d82f8...
+├── 0.00151306
+└── 0.05398683
+        ↓
+continues... "https://mempool.space/address/bc1qyncp70hqutncsxmkx0m2hdvjw6glahlltda7ka"
