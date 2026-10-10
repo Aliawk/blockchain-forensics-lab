@@ -161,4 +161,60 @@ Equal outputs can create an anonymity set where blockchain data alone does not e
 
 Individual transaction characteristics may be weak evidence.
 
-Repeated characteristics across multiple transactions can provide stronger analytical
+Repeated characteristics across multiple transactions can provide stronger analytical signals.
+
+Examples include:
+
+- Repeated transaction fees
+- Similar input/output structures
+- Similar script types
+- Consistent spending intervals
+- Repeated continuation patterns
+
+These indicators can support a hypothesis but should not independently be treated as proof of common ownership.
+
+---
+
+## Evidence vs Inference
+
+Blockchain investigations should distinguish between direct observations and analytical conclusions.
+
+### Observation
+
+Something directly verifiable from blockchain data.
+
+Example:
+
+> Output 1 of Transaction A was spent as an input in Transaction B.
+
+### Hypothesis
+
+An interpretation of observed behavior.
+
+Example:
+
+> Output 1 may represent wallet change.
+
+### Supporting Evidence
+
+Additional observations that strengthen the hypothesis.
+
+Example:
+
+> The output was subsequently spent using the same recurring transaction structure observed across several previous transactions.
+
+### Limitation
+
+Factors preventing a stronger conclusion.
+
+Example:
+
+> Blockchain data alone does not establish that the addresses are controlled by the same entity.
+
+## Core Principle
+
+**Blockchain relationships can often be proven. Ownership, identity and intent usually cannot.**
+
+A forensic conclusion should therefore clearly distinguish:
+
+**Observation → Hypothesis → Supporting Evidence → Limitation**
